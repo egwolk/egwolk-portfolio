@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import BottomNav from "@/components/ui/bottom-nav";
+import { FaHome, FaInfo, FaPhone } from "react-icons/fa";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,10 +37,9 @@ export default function RootLayout({
           </main>
           <BottomNav
             items={[
-              { label: "Home", href: "/" },
-              { label: "About", href: "/about" },
-              { label: "Projects", href: "/projects"},
-              { label: "Contact", href: "/contact"},
+              { label: <FaHome className="h-10 w-10"/>}, //to do
+              { label: <FaInfo className="h-10 w-10"/> }, // to do
+              { label: <FaPhone className="h-10 w-10"/>}, //todo
             ]}
           />
         </ThemeProvider>
