@@ -13,7 +13,7 @@ interface BottomNavProps {
 const BottomNav = ({ items }: BottomNavProps) => {
   return (
     <nav className='fixed bottom-0 left-0 right-0 grid place-content-center '>
-        <ul className='max-w-100 bg-black dark:bg-white text:black dark:text-white grid grid-cols-4 gap-1 m-2 text-center rounded-4xl palce-content-center justify-items-center px-2 py-2 '>
+        <ul className='max-w-100 min-w-85 bg-black dark:bg-white text:black dark:text-white grid grid-cols-4 gap-1 m-2 text-center rounded-4xl palce-content-center justify-items-center px-2 py-1 '>
             {items.map((item, index) => (
                 <li key={index} className='grid place-content-center justify-items-center'>
                     <AppButton icon={item.label} onClick={item.onClick} variant="inverse" />

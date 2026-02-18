@@ -14,7 +14,7 @@ const AppButton = ({ icon, onClick, className = '', variant = 'default' }: AppBu
     
   return (
     <button onClick={onClick} >
-      <div className={`relative ${colorClasses} rounded-lg min-h-15 min-w-15 m-2 max-h-20 max-w-20 justify-items-center place-content-center ${className}`}>
+      <div className={`relative ${colorClasses} rounded-lg min-h-13 min-w-13 m-2 max-h-20 max-w-20 justify-items-center place-content-center ${className}`}>
         {icon}
       </div>
     </button>
