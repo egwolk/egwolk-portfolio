@@ -1,8 +1,8 @@
 "use client";
 
 import BottomNav from "@/components/ui/bottom-nav";
-import { FaHome, FaInfo, FaPhone } from "react-icons/fa";
-import { ThemeToggleIcon, useThemeToggle } from "@/app/theme-toggle";
+import { FaCode, FaInfo, FaPhone } from "react-icons/fa";
+import { ThemeToggleIcon, useThemeToggle } from "@/components/ui/theme-toggle";
 
 export function BottomNavWrapper() {
   const toggleTheme = useThemeToggle();
@@ -10,7 +10,7 @@ export function BottomNavWrapper() {
   return (
     <BottomNav
       items={[
-        { label: <FaHome className="h-10 w-10"/>, onClick: () => {console.log("click")} },
+        { label: <FaCode className="h-10 w-10"/>, onClick: () => {console.log("click")} },
         { label: <FaInfo className="h-10 w-10" />, onClick: () => {console.log("click")} },
         { label: <FaPhone className="h-10 w-10"/>, onClick: () => {console.log("click")} },
         { label: <ThemeToggleIcon />, onClick: toggleTheme },
