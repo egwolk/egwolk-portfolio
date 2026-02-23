@@ -26,13 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased
+        min-h-screen grid justify-items-center place-content-center
+        transition-all duration-300`} 
       >
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
-            disableTransitionOnChange
           >
             {children}
           </ThemeProvider>
